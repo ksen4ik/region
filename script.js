@@ -5,7 +5,7 @@ fetch('https://ipapi.co/json/')
     const country = data.country;
     const region = data.region;
     if (country === 'BY') {
-      console.log(region);
+      document.querySelector('.region').innerText = region;
     } else {
       console.log('Не удалось определить регион Беларуси');
     }
